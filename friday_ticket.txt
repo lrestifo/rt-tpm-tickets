@@ -1,0 +1,10 @@
+id: ticket/new
+Queue:
+Requestor:
+Subject:
+Cc:
+AdminCc:
+Priority:
+Text:
+CF-Country:
+CF-Request_Type:
