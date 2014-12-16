@@ -1,10 +1,8 @@
 id: ticket/new
-Queue:
-Requestor:
-Subject:
-Cc:
-AdminCc:
-Priority:
+Queue: IT_Germany
+Requestor: lrestifo@esselte.com
+Subject: Friday - change backup tape
+Priority: 20
 Text:
-CF-Country:
-CF-Request_Type:
+CF-Country: DE
+CF-Request_Type: TPMTask
