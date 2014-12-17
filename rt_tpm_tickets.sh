@@ -7,6 +7,8 @@
 #curl --basic --user "$rtUser:$rtPass" --silent --request POST --header "Content-Type: text/plain" --data "$FriData" --url "$rtServer/REST/1.0/ticket/new?user=$rtUser&pass=$rtPass"
 #curl --basic --user "$rtUser:$rtPass" --silent --request POST --header "Content-Type: text/plain" --data "$MonData" --url "$rtServer/REST/1.0/ticket/new?user=$rtUser&pass=$rtPass"
 
-$rtServer=ithelpdesk-test.ema.esselte.net
-http --check-status --ignore-stdin -f POST $rtServer/rt/REST/1.0/ticket/new user==$rtUser pass==$rtPass content=@friday_ticket.txt
+rtServer=ithelpdesk-test.ema.esselte.net
+rtUser=LRestifo
+rtPass=Orsacchiotta
+#http --check-status --ignore-stdin -f POST $rtServer/rt/REST/1.0/ticket/new user==$rtUser pass==$rtPass content=@friday_ticket.txt
 http --check-status --ignore-stdin -f POST $rtServer/rt/REST/1.0/ticket/new user==$rtUser pass==$rtPass content=@monday_ticket.txt
