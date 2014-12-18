@@ -1,8 +1,10 @@
 id: ticket/new
 Queue: IT_Germany
-Requestor: lrestifo@esselte.com
-Subject: Monday - change backup tape
+Requestor: root
+Cc: treichert@esselte.com, gpimpinella@esselte.com
+Subject: DESTU - Monday backup tape
 Priority: 20
-Text: This is some blabla
+Text: Please insert Monday's backup tape in the Stuttgart tape backup unit
 CF-Country: DE
 CF-Request_Type: TPMTask
+CF-Ticket Classification: Backup
