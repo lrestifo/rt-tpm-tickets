@@ -28,7 +28,7 @@ function die() {
 
 [ -s ~/.rtrc  ] || die "Can't open ~/.rtrc"
 [ -s ~/.netrc ] || die "Can't open ~/.netrc"
-tkt="`date '+%A' | tr '[:upper:]' '[:lower:]'`_ticket.txt"
+tkt="/usr/local/etc/`date '+%A' | tr '[:upper:]' '[:lower:]'`_ticket.txt"
 [ -s $tkt ] || die "No $tkt, nothing to do."
 sed 's/ /=/' ~/.rtrc >/tmp/rtrc && source /tmp/rtrc && rm /tmp/rtrc
 http --check-status --ignore-stdin --body --form POST $server/REST/1.0/ticket/new user==$user pass==$passwd content=@$tkt
