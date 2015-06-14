@@ -36,5 +36,5 @@ tktfiles="/usr/local/etc/`date '+%A' | tr '[:upper:]' '[:lower:]'`_ticket"
 sed 's/ /=/' ~/.rtrc >/tmp/rtrc && source /tmp/rtrc && rm /tmp/rtrc
 for tkt in $tktfiles*.txt
 do
-  echo http --check-status --ignore-stdin --body --form POST $server/REST/1.0/ticket/new user==$user pass==$passwd content=@$tkt
+  [ -s $tkt ] && echo /usr/local/bin/http --check-status --ignore-stdin --body --form POST $server/REST/1.0/ticket/new user==$user pass==$passwd content=@$tkt
 done
