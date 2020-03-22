@@ -28,13 +28,12 @@ Remember to protect these files.
 ## Sample text file content
 ```
 id: ticket/new
-Queue: IT_Germany
+Queue: General
 Requestor: root
-Cc: treichert@esselte.com, gpimpinella@esselte.com
-Subject: DESTU - Monday backup tape
+Cc: someone@mail.com, another@mail.com
+Subject: Monday backup tape
 Priority: 20
-Text: Please insert Monday's backup tape in the Stuttgart tape backup unit
-CF-Country: DE
+Text: Please insert Monday's backup tape in the tape backup unit
 CF-Request_Type: TPMTask
 CF-Ticket Classification: Backup
 ```
