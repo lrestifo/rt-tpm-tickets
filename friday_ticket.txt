@@ -1,10 +1,9 @@
 id: ticket/new
-Queue: IT_Germany
+Queue: General
 Requestor: root
-Cc: treichert@esselte.com, gpimpinella@esselte.com
-Subject: DESTU - Friday backup tape
+Cc: someone@mail.com, another@mail.com
+Subject: Friday backup tape
 Priority: 20
-Text: Please insert Friday's backup tape in the Stuttgart tape backup unit
-CF-Country: DE
+Text: Please insert Friday's backup tape in the tape backup unit
 CF-Request_Type: TPMTask
 CF-Ticket Classification: Backup
